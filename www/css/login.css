@@ -13,14 +13,14 @@ body {
     background-color: #fff;
     border-radius: 7px;
     padding: 75px;
-    gap: 5px
+    gap: 3px
 }
 
 .formLogin h1 {
     padding: 0;
     margin: 0;
     font-weight: 550;
-    font-size: 3.3em;
+    font-size: 3.0em;
 }
 
 .formLogin h2 {
@@ -66,10 +66,6 @@ body {
     transition: all linear 160ms;
 }
 
-.formLogin a:hover {
-    color: #2c65ff;
-}
-
 .btn {
     background-color: var(--azul);
     color: #fff;
@@ -82,9 +78,27 @@ body {
 
 }
 
+.btnSecnd {
+    background-color: var(--branco);
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.btnSecnd:hover {
+    transform: scale(1.05);
+    background-color: var(--branco);
+}
+
 .btn:hover {
     transform: scale(1.05);
-    background-color: var(--azul);
+    background-color: var(--cinza);
 }
 
 .login-inner{
