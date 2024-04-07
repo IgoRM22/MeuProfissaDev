@@ -24,29 +24,25 @@
 <body>
     <div class="page">
         <form method="POST" class="formLogin">
-            <h1>MeuProfissa</h1>
-            <h2>Cadastre-se!</h1>
+            <h2>Cadastre-se!</h2>
             <p>Estamos felizes em ter você aqui.</p>
             <label for="email">E-mail</label>
-            <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input id="email" type="e-mail" placeholder="Digite seu e-mail" autofocus="true" />
             <label for="password">Senha</label>
             <input id="password" type="password" placeholder="Digite sua senha" />
             <a href="/">Esqueci minha senha</a>
 
             <input id="submit" type="submit" value="Acessar" class="btn" />
-
-            <p>Não tenho uma conta ainda</p>
-            <input href="/login/" id="signin" type="submit" value="Criar uma conta" class="btnSecnd">
-
+        </form>
+            <div class="possui-conta">
+                <p>Não possui uma conta ainda? <a href="/login/" class="btnSecnd">Crie uma agora!</a></p>
+            </div>
             <div class="login-inner">
                 <button class="ico-wrapper" id="submit-google-auth">
-                    <img class="ico-wrapper" src="img/ico_google.png" alt="Google Auth">
+                 <img class="ico-wrapper" src="img/ico_google.png" alt="Google Auth">
                 </button>
             </div>
-        </form>
     </div>
-
-
 
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
@@ -55,8 +51,8 @@
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
     <script src="cordova.js"></script>
-    <script type="module" src="js/firebase_login.js" defer></script>
-    <script type="module" src="js/firebase_googlelogin.js" defer></script>
+    <script src="js/firebase_login.js"></script>
+    <script src="js/firebase_googlelogin.js"></script>
 </body>
 
 </html>
