@@ -18,38 +18,50 @@
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
-<body>
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h2>Faça seu Login!</h1>
-            <p>Sentimos sua falta!</p>
-            <label for="email">E-mail</label>
-            <input id="email" type="e-mail" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input id="password" type="password" placeholder="Digite sua senha" />
-            <a href="/">Esqueci minha senha</a>
-
-            <input id="submit" type="submit" value="Acessar" class="btn" />
-        </form>
-            <div class="possui-conta">
-                <p>Não possui uma conta ainda? <a href="/signin/" class="btnSecnd">Crie uma agora!</a></p>
+    <body>
+        <!-- App root element -->
+        <div id="app">
+    
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="login" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="page">
+                            <form method="POST" class="formLogin">
+                                <h2>Faça seu Login!</h1>
+                                <p>Sentimos sua falta!</p>
+                                <label for="email">E-mail</label>
+                                <input id="email" type="e-mail" placeholder="Digite seu e-mail" autofocus="true" />
+                                <label for="password">Senha</label>
+                                <input id="password" type="password" placeholder="Digite sua senha" />
+                                <a href="/">Esqueci minha senha</a>
+                    
+                                <input id="submit" type="submit" value="Acessar" class="btn" />
+                            </form>
+                                <div class="possui-conta">
+                                    <p>Não possui uma conta ainda? <a href="/signin/" class="btnSecnd">Crie uma agora!</a></p>
+                                </div>
+                                <div class="login-inner">
+                                    <button class="ico-wrapper" id="submit-google-auth">
+                                     <img class="ico-wrapper" src="img/ico_google.png" alt="Google Auth">
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="login-inner">
-                <button class="ico-wrapper" id="submit-google-auth">
-                 <img class="ico-wrapper" src="img/ico_google.png" alt="Google Auth">
-                </button>
-            </div>
-    </div>
-
-    <!-- Path to Framework7 Library Bundle JS-->
-    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
-	<!-- jQuery -->
-	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
-    <!-- Roteamento do app-->
-    <script type="text/javascript" src="js/routes.js"></script>
-    <script src="cordova.js"></script>
-    <script type="module" src="js/firebase_googlelogin.js" defer></script>
-    <script type="module" src="js/firebase_login.js" defer></script>
-</body>
+        </div>
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/firebase_login.js"></script>
+        <script src="js/firebase_googlelogin.js"></script>
+    </body>
 
 </html>
