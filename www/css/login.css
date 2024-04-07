@@ -94,7 +94,6 @@ body {
 .btnSecnd {
     color: var(--azul); /* Alterar para a cor desejada */
     font-size: 14px; /* Definir o tamanho do texto igual ao restante */
-    text-decoration: none; /* Remover sublinhado */
 }
 
 .btnSecnd:hover {
@@ -126,9 +125,13 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #ffff;
     border: none !important;
 }
 .ico-wrapper:hover {
     transform: scale(1.1);
+}
+
+.page{
+    background: var(--branco);
 }
