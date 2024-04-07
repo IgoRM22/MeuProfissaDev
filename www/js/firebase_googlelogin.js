@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-const google_auth = document.getElementById("google_auth");
+const google_auth = document.getElementById("submit-google-auth");
 google_auth.addEventListener("click", function (event) {
   event.preventDefault();
 
