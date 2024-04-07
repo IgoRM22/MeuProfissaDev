@@ -25,18 +25,24 @@ body{
     flex-flow: column wrap;
 }
 
+.toolbar-inner{
+    background: var(--branco);
+    border-top:1px solid var(--gelo)
+}
+
 .toolbar-inner .link{    
     flex:1;
     height: 80px;  
     line-height: 25px; 
 	font-weight:bold;    
+    color: var(--azul)
 }
 
 .toolbar-inner .link:not(.active){
-    color:gray;
+    color: var(--preto);
 	font-weight:normal;
 }
 
 .toolbar-inner > .link i{
-    font-size: 28px;
+    font-size: 30px;
 }
