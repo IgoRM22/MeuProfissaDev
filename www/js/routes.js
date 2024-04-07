@@ -31,6 +31,9 @@ var app = new Framework7({
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
     $.getScript('js/index.js');
+	$.getScript('js/firebase_login.js');
+	$.getScript('js/firebase_signin.js');
+	$.getScript('js/firebase_googlelogin.js');
 
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
