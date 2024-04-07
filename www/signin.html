@@ -25,8 +25,8 @@
     <div class="page">
         <form method="POST" class="formLogin">
             <h1>MeuProfissa</h1>
-            <h2>Faça seu Login!</h1>
-            <p>Sentimos sua falta!</p>
+            <h2>Cadastre-se!</h1>
+            <p>Estamos felizes em ter você aqui.</p>
             <label for="email">E-mail</label>
             <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" />
             <label for="password">Senha</label>
@@ -35,10 +35,8 @@
 
             <input id="submit" type="submit" value="Acessar" class="btn" />
 
-            <p>Não possui uma conta ainda?</p>
-            <a href="https://www.w3schools.com">
-                <input class="btnSecnd" type="submit" value="Criar uma conta agora" name="Submit" id="signin" />
-            </a>
+            <p>Não tenho uma conta ainda</p>
+            <input href="/signin.html" id="signin" type="submit" value="Criar uma conta" class="btnSecnd">
 
             <div class="login-inner">
                 <button class="ico-wrapper" id="submit-google-auth">
@@ -46,8 +44,9 @@
                 </button>
             </div>
         </form>
-    
     </div>
+
+
 
     <!-- Path to Framework7 Library Bundle JS-->
     <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
