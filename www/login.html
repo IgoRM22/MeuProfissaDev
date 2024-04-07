@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Meu Profissa</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>MeuProfissa</h1>
+            <h2>Faça seu Login!</h1>
+            <p>Sentimos sua falta!</p>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>
+            <input id="password" type="password" placeholder="Digite sua senha" />
+            <a href="/">Esqueci minha senha</a>
+            <input id="submit" type="submit" value="Acessar" class="btn" />
+
+            <div class="login-inner">
+                <button class="ico-wrapper" id="submit-google-auth">
+                    <img class="ico-wrapper" src="img/ico_google.png" alt="Google Auth">
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+    <script type="module" src="js/firebase_login.js" defer></script>
+    <script type="module" src="js/firebase_googlelogin.js" defer></script>
+</body>
+
+</html>
